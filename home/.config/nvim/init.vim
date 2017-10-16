@@ -61,15 +61,6 @@ autocmd FileType markdown setlocal textwidth=79
 autocmd FileType javascript set shiftwidth=2
 let g:vim_json_syntax_conceal = 0
 
-" autoformat with scalafmt
-" let g:formatdef_scalafmt = "'ng scalafmt --stdin'"
-" let g:formatters_scala = ['scalafmt']
-let g:neoformat_scala_scalafmt = {
-        \ 'exe': 'ng',
-        \ 'args': ['scalafmt', '--stdin'],
-        \ 'stdin': 1,
-        \ }
-
 " Powerline
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'base16_grayscale'
